@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="assets/index.css">
+		<title>OpenMonde</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-title-block">
+				<img src="assets/img/logo.svg">
+			</div>
+			<div class="header-menu-block">
+				<button class="header-menu-block-buttons">Log in</button>
+				<button class="header-menu-block-buttons">Register</button>
+			</div>
+		</div>
+		<div class="editor-cont">
+			<div class="editor-block editor-side">
+				<!--Create/Modify a Pin-->
+				<form>
+					<select name="Select" id="pin-type">
+						<option value="place">PLACE</option>
+						<option value="city">City</option>
+						<option value="town">Town</option>
+						<option value="village">Village</option>
+						<option value="fort">Fort</option>
+						<option value="building">Building</option>
+						<option value="camp">Camp</option>
+						<option value="dungeon">Dungeon</option>
+						<option value="lair">Lair</option>
+						<option value="cave">Cave</option>
+						<option value="event">EVENT</option>
+						<option value="battle">Battle</option>
+						<option value="encounter">Encounter</option>
+						<option value="boss">Boss</option>
+					</select>
+					<br>
+					<input type="text" id="pin-name" placeholder="Title">
+					<br>
+					<textarea id="pin-description" rows="10" cols="47">Hey, you! This text area, as well as this entire side menu and top menu are just pointless eye candy at the moment! Don't you just love senseless lagniappe? The utter joy of clicking a button that does absolutely jack shit is one of the greatest joys left in this dark, empty world. Floating amongst billions of light years of terrifying nothing, you too can click the log in button of nihilism! Now with pretty animations!</textarea>
+				</form>
+			</div>
+			<div class="editor-block editor-viewport">
+				<img class="zoom" src="assets/img/tealia.jpg">
+				<script src="assets/wheelzoom/wheelzoom.js"></script>
+				<script>
+					wheelzoom(document.querySelector('img.zoom'));
+				</script>
+			</div>
+			<i class="version-mark">0.1 Alpha</i>
+		</div>
+	</body>
+</html>
